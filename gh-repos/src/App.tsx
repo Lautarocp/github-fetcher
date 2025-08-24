@@ -1,11 +1,9 @@
-
-import { GithubUserFetcher } from "./components/github";
-
-
+import SearchGithub from "./components/searchGithub";
 export function App() {
   return (
         <>
-          <GithubUserFetcher username="rengil" />
+         <SearchGithub/>
+
         </>
   );
 }
