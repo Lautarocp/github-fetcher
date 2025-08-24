@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { User } from "../types/user";
+import type { User } from "../types/User";
 import { UserCard } from "./UserCard";
 
 type GithubUserFetcherProps = {

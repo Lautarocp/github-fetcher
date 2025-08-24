@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GithubUserFetcher } from "./githubUser";
+import { GithubUserFetcher } from "./GithubUser";
 import { SearchBar } from "./SearcBar";
 
 function SearchGithub() {

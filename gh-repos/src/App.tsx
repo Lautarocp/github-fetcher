@@ -1,4 +1,4 @@
-import SearchGithub from "./components/searchGithub";
+import SearchGithub from "./components/SearchGithub";
 export function App() {
   return (
         <>
