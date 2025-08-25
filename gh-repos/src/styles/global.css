@@ -4,7 +4,6 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
   background-color: #1f2937;
   padding: 1rem;
@@ -12,9 +11,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 1rem auto;   /* <-- centra horizontal */
   border-radius: 0.25rem;
+  max-width: 900px;    /* <-- evita que ocupe todo el ancho */
+  width: 100%;         /* ocupa todo hasta el máximo */
 }
+
+
 
 /* Layout principal con grid */
 main {
