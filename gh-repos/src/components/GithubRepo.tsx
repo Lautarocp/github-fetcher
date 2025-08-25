@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import type { RepositoryType } from "../types/RepositoryType"; 
+// Component to fetch and display GitHub repositories for a given user
+import { useEffect, useState } from "react"; 
+import type { RepositoryType } from "../types/RepositoryType"; //RepositoryType is a type that defines the structure of a GitHub repository object
 import { RepoCard } from "./ReposCard"; 
 
 type GithubRepoFetcherProps = {

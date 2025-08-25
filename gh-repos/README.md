@@ -21,6 +21,8 @@ This project demonstrates how to use React hooks (`useState`, `useEffect`) to ha
 
 
 ---
+## Styles Stack
+--[CSS legacy] (https://developer.mozilla.org/es/docs/Web/CSS)
 
 ## 🚀 Getting Started
 
