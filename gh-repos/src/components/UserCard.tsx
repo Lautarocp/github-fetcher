@@ -1,22 +1,20 @@
-import type { User } from "../types/User";
+import type { User } from '../types/User'
 
-interface UserCardProps { 
-  user: User;
+interface UserCardProps {
+  user: User
 }
 
-export const UserCard = ({ user }: UserCardProps) => {
+export function UserCard({ user }: UserCardProps) {
   return (
     <div className="user-card">
-      <img
-        src={user.avatar_url}
-        alt={user.login}
-        
-      />
+      <img src={user.avatar_url} alt={user.login} className="user-avatar" />
       <h1>{user.name ?? user.login}</h1>
-      <h2>{user.login}</h2>  
-      <p>{user.bio ?? "No bio available"}</p>
-      <p>{user.location }</p>
-      
+      <h2>@{user.login}</h2>
+      <p className="user-bio">{user.bio ?? 'No bio available'}</p>
+      {user.location && <p className="user-location">📍 {user.location}</p>}
+      <a href={user.html_url} target="_blank" rel="noopener noreferrer" className="profile-link">
+        View Profile
+      </a>
     </div>
-  );
-};
+  )
+}
