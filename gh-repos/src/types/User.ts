@@ -6,4 +6,8 @@ export type User = {
   bio: string | null
   email: string | null
   location: string | null
+  followers: number
+  following: number
+  public_repos: number
+  created_at: string
 }

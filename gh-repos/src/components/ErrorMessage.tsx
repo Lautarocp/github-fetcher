@@ -5,10 +5,13 @@ interface ErrorMessageProps {
 export function ErrorMessage({ message }: ErrorMessageProps) {
   return (
     <div className="error-container">
-      <span className="error-icon">⚠️</span>
-      <div>
-        <h3>Error</h3>
-        <p>{message}</p>
+      <div className="error-frame">
+        <span className="error-tag">[ERR]</span>
+        <div className="error-body">
+          <h3>// connection.failed</h3>
+          <p>{message}</p>
+          <p className="error-hint">▸ verify handle &amp; retry</p>
+        </div>
       </div>
     </div>
   )

@@ -6,4 +6,6 @@ export type Repository = {
   updated_at: string
   html_url: string
   stargazers_count: number
+  forks_count: number
+  fork: boolean
 }
